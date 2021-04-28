@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About this project:
+
+---
+
+- Project Name : quranku
+- Database Name : -
+- Project type : Frontend Web
+- Information : Project web apilkasi quran sederhana dengan Reactjs
+
+---
+
 ## Available Scripts
 
 In the project directory, you can run:
