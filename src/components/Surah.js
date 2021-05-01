@@ -19,12 +19,20 @@ export default class Surah extends Component {
     });
   };
 
+  handleClick = nomor => {
+    this.props.history.push(`/surah/${nomor}`);
+  };
+
   render() {
     const { allSurah } = this.state;
     return (
       <div className="row">
         {allSurah.map(surah => (
-          <CardSurah key={surah.nomor} surah={surah} />
+          <CardSurah
+            handleClick={id => this.handleClick(id)}
+            key={surah.nomor}
+            surah={surah}
+          />
         ))}
       </div>
     );

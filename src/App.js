@@ -1,22 +1,18 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Jumbotron from './components/Jumbotron';
-import Search from './components/Search';
 import Footer from './components/Footer';
-import HeadingText from './components/HeadingText';
-import Surah from './components/Surah';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import DetailSurah from './pages/DetailSurah';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Jumbotron />
-      <div className="container">
-        <Search />
-        <HeadingText />
-        <Surah />
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/surah/:nomor" component={DetailSurah} />
+      </Switch>
       <Footer />
     </Router>
   );

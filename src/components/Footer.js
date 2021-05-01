@@ -7,7 +7,7 @@ const Footer = () => {
       <span className="text-white">
         Made With <span className="text-danger">&hearts;</span> By{' '}
         <Link
-          to="https://github.com/giannurwana19"
+          to={{ pathname: 'https://github.com/giannurwana19' }}
           target="_blank"
           className="text-decoration-none text-white">
           Gian Nurwana

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CardSurah = ({ surah }) => {
+const CardSurah = ({ surah, handleClick }) => {
   return (
     <div className="col-sm-6 col-md-4 mb-3">
-      <div className="card effect-shadow" onClick={() => alert('ok')}>
+      <div className="card effect-shadow" onClick={() => handleClick(surah.nomor)}>
         <div className="card-body">
           <h5 className="card-title d-flex">
             <div className="number">{surah.nomor}</div>{' '}
