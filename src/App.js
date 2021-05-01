@@ -1,47 +1,24 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { Fragment } from 'react';
 import Jumbotron from './components/Jumbotron';
 import Search from './components/Search';
-import CardSurah from './components/CardSurah';
 import Footer from './components/Footer';
 import HeadingText from './components/HeadingText';
+import Surah from './components/Surah';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Fragment>
+    <Router>
       <Navbar />
       <Jumbotron />
       <div className="container">
         <Search />
         <HeadingText />
-        <div className="row">
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-          <CardSurah />
-        </div>
+        <Surah />
       </div>
       <Footer />
-    </Fragment>
+    </Router>
   );
 }
 
