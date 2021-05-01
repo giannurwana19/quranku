@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-green {
+  background-color: #16a085;
+}
+
+.bg-gray {
+  background-color: #ecf0f1;
+}
+
+span,
+p,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #535c68;
+}
+
+.jumbotron {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}

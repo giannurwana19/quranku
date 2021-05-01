@@ -1,24 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import { Fragment } from 'react';
+import Jumbotron from './components/Jumbotron';
+import Search from './components/Search';
+import CardSurah from './components/CardSurah';
+import Footer from './components/Footer';
+import HeadingText from './components/HeadingText';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar />
+      <Jumbotron />
+      <div className="container">
+        <Search />
+        <HeadingText />
+        <div className="row">
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+          <CardSurah />
+        </div>
+      </div>
+      <Footer />
+    </Fragment>
   );
 }
 
