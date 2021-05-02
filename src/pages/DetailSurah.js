@@ -9,6 +9,7 @@ export default class Home extends Component {
       nomor: props.match.params.nomor,
       data: {},
       allAyat: [],
+      allTafsir: [],
     };
   }
 
@@ -22,8 +23,14 @@ export default class Home extends Component {
     this.setState({
       data: data,
       allAyat: data.ayat,
+    }, () => {
+      document.title = this.state.data.nama_latin;
     });
   };
+  
+  componentWillUnmount() {
+    document.title = 'Quranku';
+  }
 
   render() {
     const { data, allAyat } = this.state;
@@ -41,7 +48,7 @@ export default class Home extends Component {
                   <br />
                   <p className="card-text">
                     <em>
-                      {ayat.nomor}. "{ayat.idn}"
+                      <strong>{ayat.nomor}</strong>. "{ayat.idn}"
                     </em>
                   </p>
                 </div>

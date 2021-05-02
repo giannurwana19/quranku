@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../img/quran.png';
+import Audio from './Audio';
 
 class Jumbotron extends React.Component {
   render() {
@@ -15,12 +16,13 @@ class Jumbotron extends React.Component {
           </p>
           <div className="container">
             <p dangerouslySetInnerHTML={{ __html: data.deskripsi }}></p>
+            <Audio src={data.audio} />
           </div>
         </section>
       );
     } else {
       return (
-        <section className="jumbotron text-center bg-gray">
+        <section className="jumbotron text-center bg-gray mb-3">
           <img src={logo} alt="quran" width="100" />
           <h1 className="display-5 fw-bold">Quranku</h1>
           <p className="lead">Aplikasi Quran versi Bahasa Indonesia</p>
