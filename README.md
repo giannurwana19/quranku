@@ -10,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Database Name : -
 - Project type : Frontend Web
 - Information : Project web apilkasi quran sederhana dengan Reactjs
+- Web URL: [webquranku.netlify.app](https://webquranku.netlify.app/)
 
 ---
 
