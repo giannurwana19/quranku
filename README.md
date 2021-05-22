@@ -24,7 +24,7 @@ note : pastikan di komputer anda sudah terinstall nodejs, git dan yarn (optional
 - Clone repository
 
 ```
-git remote https://github.com/giannurwana19/quranku.git
+git clone https://github.com/giannurwana19/quranku.git
 ```
 
 - Jalan kan perintah `npm install` atau `yarn`
