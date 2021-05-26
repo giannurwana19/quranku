@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { Component, Fragment } from 'react';
+import Footer from '../components/Footer';
 import Jumbotron from '../components/Jumbotron';
+import Navbar from '../components/Navbar';
 
 export default class Home extends Component {
   constructor(props) {
@@ -39,6 +41,7 @@ export default class Home extends Component {
     const { data, allAyat } = this.state;
     return (
       <Fragment>
+        <Navbar />
         <Jumbotron data={data} />
         <div className="container">
           {allAyat.map(ayat => (
@@ -62,6 +65,7 @@ export default class Home extends Component {
             </Fragment>
           ))}
         </div>
+        <Footer />
       </Fragment>
     );
   }
