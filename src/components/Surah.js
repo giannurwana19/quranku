@@ -5,6 +5,7 @@ import CardSurah from './CardSurah';
 export default class Surah extends Component {
   state = {
     allSurah: [],
+    search: '',
   };
 
   componentDidMount() {
@@ -26,14 +27,35 @@ export default class Surah extends Component {
   render() {
     const { allSurah } = this.state;
     return (
-      <div className="row">
-        {allSurah.map(surah => (
-          <CardSurah
-            handleClick={id => this.handleClick(id)}
-            key={surah.nomor}
-            surah={surah}
-          />
-        ))}
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 col-sm-12">
+            <div className="form-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Cari Surah..."
+                value={this.state.search}
+                onChange={e => this.setState({ search: e.target.value })}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          {allSurah
+            .filter(surah =>
+              surah.nama_latin
+                .toLowerCase()
+                .includes(this.state.search.toLowerCase())
+            )
+            .map(surah => (
+              <CardSurah
+                handleClick={id => this.handleClick(id)}
+                key={surah.nomor}
+                surah={surah}
+              />
+            ))}
+        </div>
       </div>
     );
   }
