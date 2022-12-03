@@ -3,23 +3,26 @@
 ![Quranku](public/webquranku.png)
 
 ## About this project:
+
 ---
 
 - Project Name : quranku
 - Database Name : -
 - Project type : Frontend Web
 - Information : Project web apilkasi quran sederhana dengan Reactjs
-- Web URL: [webquranku.netlify.app](https://webquranku.netlify.app/)
+- Web URL: [webquranku.vercel.app](https://webquranku.vercel.app/)
 
 ---
 
 ## Feature
+
 - List Semua surah
 - List ayat surah beserta terjemahan
 - Audio di setiap surah
 
-## Usage
-note : pastikan di komputer anda sudah terinstall nodejs, git dan yarn (optional)
+## Installation
+
+Note : pastikan di komputer anda sudah terinstall nodejs, git dan yarn (optional)
 
 - Clone repository
 
@@ -28,6 +31,7 @@ git clone https://github.com/giannurwana19/quranku.git
 ```
 
 - Jalan kan perintah `npm install` atau `yarn`
+
 ```
 npm install
 ```
@@ -41,7 +45,7 @@ yarn
 - Menjalankan aplikasi
 
 ```
-npm run start
+npm start
 ```
 
 atau dengan yarn
